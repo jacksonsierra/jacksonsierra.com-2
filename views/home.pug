@@ -1,0 +1,10 @@
+extends layout
+include ../node_modules/pug-bootstrap/components/icons
+include ../node_modules/pug-bootstrap/components/carousel
+
+block append content
+  +carousel("home", [
+    {image: "images/botswana-color.jpg", p: "Okavango Delta, Botswana"},
+    {image: "images/belize.jpg", p: "Placencia, Belize"},
+    {image: "images/johnsville.jpg", p: "Johnsville, California"},
+  ])

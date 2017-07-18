@@ -1,0 +1,85 @@
+body {
+  font: normal 1.4em 'Raleway', Arial, sans-serif;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 16;
+  border-top: 30px solid rgb(205, 205, 205);
+  background-color: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+
+nav {
+  margin-bottom: 0 !important;
+}
+
+nav li {
+  margin: 0 10% 0 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+nav a {
+  font-size: 1.4em;
+  color: rgb(205, 205, 205);
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active,
+nav .active a {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.navbar-nav {
+  margin-top: 30px;
+  height: 50px;
+  width: 66%;
+}
+
+.navbar-brand {
+  margin: 0 70px;
+  width: 100px;
+  height: 111px;
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  margin: 0 20px 0 0;
+  width: 30px;
+  height: 22px;
+  line-height: 67px;
+}
+
+@media only screen and (max-width : 767px) {
+  header {
+    border-top: 15px solid rgb(205, 205, 205);
+    padding: 20px 0;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    width: 100%;
+    height: inherit;
+    padding: 0 15px;
+  }
+
+  .navbar-brand {
+    margin-left: 15px;
+    margin-right: 20px;
+    width: 60px;
+    height: 67px;
+  }
+}

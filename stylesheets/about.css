@@ -1,0 +1,90 @@
+.about-container {
+  display: flex;
+}
+
+.about-collage {
+  position: relative;
+  height: calc(100vh - 201px);
+  width: 58.33333333%;
+  margin-left: 8.33333333%;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  width: 25%;
+}
+
+.pic {
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+}
+
+.collage-1 {
+  top: 0;
+  left: 1%;
+  width: 20%;
+  height: 25%;
+  background-image: url('../images/buddy.jpg');
+}
+
+.collage-2 {
+  z-index: 1;
+  top: 7.5%;
+  left: 20%;
+  width: 50%;
+  height: 30%;
+  background-image: url('../images/agua-caliente.jpg');
+}
+
+.collage-3 {
+  top: 2.5%;
+  left: 65%;
+  width: 30%;
+  height: 30%;
+  background-image: url('../images/katy-jackson.png');
+}
+
+.collage-4 {
+  top: 70%;
+  left: 2.5%;
+  width: 30%;
+  height: 30%;
+  background-image: url('../images/tina-jackson.jpg');
+}
+
+.collage-5 {
+  top: 70%;
+  left: 69%;
+  width: 30%;
+  height: 30%;
+  background-image: url('../images/mom-jackson.jpg');
+}
+
+.collage-6 {
+  z-index: 2;
+  top: 35%;
+  left: 16%;
+  width: 60%;
+  height: 38%;
+  background-image: url('../images/family.jpg');
+}
+
+@media only screen and (max-width : 767px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-collage {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: initial;
+  }
+
+  .about-description {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

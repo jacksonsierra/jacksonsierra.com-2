@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title || 'Jackson Sierra'
+    meta(name='description' content='Jackson Sierra is a software engineer and thought partner interested in tackling civic and socioeconomic problems through the use of technology')
+    meta(name='google-site-verification', content='wscGQmIJFsl60YJCsCQIHEsneWxv1d_bmfIaK1rHBcQ')
+    meta(name='viewport' content='width=device-width')
+    link(rel='shortcut icon' href='./images/favicon.ico')
+    noscript.
+      iframe(src='//www.googletagmanager.com/ns.html?id=GTM-WMCXCW', height='0' width='0' style='display:none;visibility:hidden')
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WMCXCW');
+    block styles
+      link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+      link(rel='stylesheet' href='./css/styles.css')
+      link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Sarina|Lato:900|Nunito:300|Raleway:300')
+  body
+    include ../node_modules/pug-bootstrap/components/navbar
+    include header.pug
+    section
+      block content
+    include footer.pug
+    block scripts
+      script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+      script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+      script.
+        $(function() { $('[data-toggle="tooltip"]').tooltip(); })

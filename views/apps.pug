@@ -1,0 +1,88 @@
+extends layout
+include tooltip.pug
+
+block append content
+  .app-container.container-overflow
+    .row.app
+      .app-image
+        img(src='./images/symple.png')
+      .app-info
+        h3.symple Symple
+        p.app-description
+          | Co-founded a YCombinator (W17) startup that is a platform for online business payments
+        ul.list-inline
+          li: +tooltip-web('https://getsymple.com')
+        ul.app-stack
+          li.btn.btn-default.app-tech React
+          li.btn.btn-default.app-tech Redux
+          li.btn.btn-default.app-tech Django/DRF
+          li.btn.btn-default.app-tech PostgreSQL
+          li.btn.btn-default.app-tech Webpack
+          li.btn.btn-default.app-tech AWS
+    .row.app
+      .app-image
+        img(src='./images/stephen-curry.jpg')
+      .app-info
+        h3.chef-curry Chef Curry
+        p.app-description
+          | Real­time iOS APNS application to alert when Stephen Curry has caught fire in an NBA game
+        ul.list-inline
+          li: +tooltip-github('https://github.com/jacksonsierra/chef-curry-ios', 'Github iOS')
+          li: +tooltip-ios('https://appetize.io/app/fv22akuam8vdedq3kpx98q43jc')
+          li: +tooltip-github('https://github.com/jacksonsierra/chef-curry-backend', 'Github Backend')
+        ul.app-stack
+          li.btn.btn-default.app-tech Objective-C
+          li.btn.btn-default.app-tech Django
+          li.btn.btn-default.app-tech PostgreSQL
+          li.btn.btn-default.app-tech DigitalOcean
+    .row.app
+      .app-image
+        img(src='./images/immedia-stock.png')
+      .app-info
+        h3.immedia immedia
+        p.app-description
+          | Real-time news and social media aggregator for Wikipedia
+        ul.list-inline
+          li: +tooltip-github('https://github.com/The-Undefineds/immedia')
+          li: +tooltip-youtube('https://youtu.be/wLI6h5Ehua0')
+        ul.app-stack
+          li.btn.btn-default.app-tech React
+          li.btn.btn-default.app-tech D3
+          li.btn.btn-default.app-tech Node.js
+          li.btn.btn-default.app-tech Express
+          li.btn.btn-default.app-tech MongoDB
+          li.btn.btn-default.app-tech Gulp.js
+          li.btn.btn-default.app-tech DigitalOcean
+    .row.app
+      .app-image
+        img(src='./images/murmur-stock.png')
+      .app-info
+        h3.murmur Murmur
+        p.app-description
+          | Anonymous messaging board on web, iOS and Android platforms
+        ul.list-inline
+          li: +tooltip-ios('https://appetize.io/app/x7qywn60g6y0bn7krq2x7tkukw')
+          li: +tooltip-github('https://github.com/repl-rebels/murmur-mobile/tree/production', 'Github iOS')
+        ul.app-stack
+          li.btn.btn-default.app-tech React
+          li.btn.btn-default.app-tech React Native
+          li.btn.btn-default.app-tech Node.js
+          li.btn.btn-default.app-tech Express
+          li.btn.btn-default.app-tech Firebase
+          li.btn.btn-default.app-tech DigitalOcean
+    .row.app
+      .app-image
+        img(src='./images/kevin-curtis-3308.jpg')
+      .app-info
+        h3.koupler Koupler
+        p.app-description
+          | Match-making service for couples interested in doing activities with other couples
+        ul.list-inline
+          li: +tooltip-github('https://github.com/repl-rebels/Koupler')
+        ul.app-stack
+          li.btn.btn-default.app-tech Angular
+          li.btn.btn-default.app-tech Node.js
+          li.btn.btn-default.app-tech Express
+          li.btn.btn-default.app-tech MySQL
+          li.btn.btn-default.app-tech DigitalOcean
+

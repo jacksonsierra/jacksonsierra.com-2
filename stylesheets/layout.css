@@ -1,0 +1,9 @@
+section {
+  margin-top: 201px;
+}
+
+@media only screen and (max-width : 767px) {
+  section {
+    margin-top: 122px;
+  }
+}

@@ -1,0 +1,38 @@
+footer {
+  background-color: rgb(255, 255, 255);
+  border-top: 2em solid rgb(255, 255, 255);
+  border-bottom: 2em solid rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.footer-subtitle {
+  margin: 0 0 10px;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.tooltip-icon {
+  width: 32px;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width : 767px) {
+  footer {
+    bottom: auto;
+    height: 175px;
+  }
+}

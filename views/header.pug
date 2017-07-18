@@ -1,0 +1,19 @@
+mixin navbar_logo(name, id, style, href, src)
+  - var style = (typeof style === 'undefined') ? "default" : style
+  - var href = (typeof style === 'undefined') ? "#" : href
+  nav( role="navigation", class=["navbar", "navbar-" + style] )
+    .navbar-header
+      button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#" + id, aria-expanded="false", aria-controls="navbar")
+        img(class='hamburger' src='./images/hamburger.png')
+      a.navbar-brand(href=href)
+        img(class='navbar-brand-img' src=src)
+
+    .collapse.navbar-collapse( id=id )
+      ul.nav.navbar-nav
+        block
+
+header
+  +navbar_logo('Jackson Sierra', 'menu', 'menu', '/', './images/jks-initials.png')
+    +nav_item('/', 'nav_item', path === 'home') Home
+    +nav_item('/apps', 'nav_item', path === 'apps') Apps
+    +nav_item('/about', 'nav_item', path === 'about') About

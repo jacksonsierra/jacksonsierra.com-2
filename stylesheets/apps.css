@@ -1,0 +1,101 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 16.66666667%;
+  margin-right: 16.66666667%;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgb(225, 225, 225);
+  height: auto;
+  padding: 5% 0;
+}
+
+.app-image {
+  width: 41.66667%;
+}
+
+.app-image img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  margin: 2.5vh 0;
+  padding-right: 0;
+}
+
+.list-inline {
+  text-align: center;
+}
+
+.app-stack {
+  padding: 0;
+}
+
+.app-tech {
+  font: normal 100% 'Raleway', Arial, sans-serif;
+  margin: 5px 5px 5px 0;
+  background-color: rgb(205, 205, 205) !important;
+  cursor: pointer !important;
+  text-transform: uppercase;
+}
+
+.symple {
+  font-family: Lato;
+  font-weight: 500;
+  color: #20bf95;
+}
+
+.chef-curry {
+  font-family: Copperplate;
+  color: rgb(255, 199, 044);
+}
+
+.immedia {
+  font-family: Nunito;
+  color: rgb(0, 191, 255);
+}
+
+.murmur {
+  font-family: Sarina;
+  color: rgb(5, 101, 188);
+}
+
+.koupler {
+  font-family: Lato;
+  color: rgb(255, 255, 255);
+  text-shadow: black -1px 0px, black 0px 1px, black 1px 0px, black 0px -1px;
+}
+
+@media only screen and (max-width : 767px) {
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .app {
+    padding-bottom: 20px;
+    margin-top: initial;
+    flex-direction: column;
+  }
+
+  .app-info {
+    width: 100%;
+  }
+
+  .app-image {
+    width: 75%;
+  }
+}
