@@ -53,29 +53,29 @@
 }
 
 .symple {
-  font-family: Lato;
+  font-family: 'Lato', Arial, sans-serif;
   font-weight: 500;
-  color: #20bf95;
+  color: #0C654F;
 }
 
 .chef-curry {
-  font-family: Copperplate;
-  color: rgb(255, 199, 044);
+  font-family: Copperplate, serif;
+  color: #005D9E;
 }
 
 .immedia {
-  font-family: Nunito;
-  color: rgb(0, 191, 255);
+  font-family: 'Nunito', Arial, sans-serif;
+  color: #005C80;
 }
 
 .murmur {
-  font-family: Sarina;
-  color: rgb(5, 101, 188);
+  font-family: 'Sarina', cursive;
+  color: #0559A3;
 }
 
 .koupler {
-  font-family: Lato;
-  color: rgb(255, 255, 255);
+  font-family: 'Lato', Arial, sans-serif;
+  color: #FFFFFF;
   text-shadow: black -1px 0px, black 0px 1px, black 1px 0px, black 0px -1px;
 }
 
@@ -83,6 +83,11 @@
   .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+
+  .app-container {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .app {

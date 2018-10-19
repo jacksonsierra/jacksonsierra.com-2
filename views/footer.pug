@@ -2,7 +2,7 @@ include tooltip.pug
 
 footer
   span.footer-title Jackson Sierra
-  span.footer-subtitle Copyright © 2015-2017. Shipped from San Francisco, CA.
-  .footer-links
-    +tooltip-github('https://github.com/jacksonsierra')
-    +tooltip-linkedin('https://linkedin.com/in/jacksonsierra')
+  span.footer-subtitle Copyright © 2015-#{(new Date()).getFullYear()}.
+  ul.footer-links
+    li: +tooltip-github('https://github.com/jacksonsierra')
+    li: +tooltip-linkedin('https://linkedin.com/in/jacksonsierra')

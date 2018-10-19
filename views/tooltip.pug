@@ -1,19 +1,19 @@
 mixin tooltip(text, placement, href, src)
-  a(href=href, data-toggle='tooltip', data-placement=placement, title=text, target='_blank')
-    img(class='tooltip-icon' src=src)
+  a(href=href, data-toggle='tooltip', data-placement=placement, title=text, target='_blank', rel="noopener")
+    img(class='tooltip-icon' src=src, alt=text)
 
 mixin tooltip-github(href, text)
-  +tooltip(text || 'Github', 'top', href, './images/github.png')
+  +tooltip(text || 'Github', 'top', href, 'images/github.min.png')
 
 mixin tooltip-linkedin(href)
-  +tooltip('Linkedin', 'top', href, './images/linkedin.png')
+  +tooltip('Linkedin', 'top', href, 'images/linkedin.min.png')
 
 mixin tooltip-web(href)
-  +tooltip('Web', 'top', href, './images/www.png')
+  +tooltip('Web', 'top', href, 'images/www.min.png')
 
 mixin tooltip-ios(href)
-  +tooltip('iOS', 'top', href, './images/ios.png')
+  +tooltip('iOS', 'top', href, 'images/ios.min.png')
 
 mixin tooltip-youtube(href)
-  +tooltip('YouTube', 'top', href, './images/youtube.png')
+  +tooltip('YouTube', 'top', href, 'images/youtube.min.png')
 

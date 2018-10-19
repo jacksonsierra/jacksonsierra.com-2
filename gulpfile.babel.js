@@ -1,22 +1,29 @@
 import gulp from 'gulp'
-import newer from 'gulp-newer'
 import imagemin from 'gulp-imagemin'
+import imageminPngquant from 'imagemin-pngquant'
+import imageminMozjpeg from 'imagemin-mozjpeg'
 import rename from 'gulp-rename'
 import concat from 'gulp-concat'
 import minifyCSS from 'gulp-csso'
 import nodemon from 'gulp-nodemon'
 
+const imgDir = 'images'
+const cssDir = 'stylesheets'
 const imgDestDir = 'public/images'
 const cssDestDir = 'public/css'
-const cssDir = 'stylesheets'
 
 gulp.task('images', () => (
-  gulp.src(`${imgDestDir}/*'`)
-    .pipe(newer(imgDestDir))
-    .pipe(imagemin({optimizationLevel: 5}))
-    .pipe(rename((path) => {
-      path.basename += '.min'
-    }))
+  gulp.src(`${imgDir}/*`)
+    .pipe(imagemin([
+      imageminPngquant({
+        speed: 1,
+        quality: 50,
+      }),
+      imageminMozjpeg({
+        quality: 50,
+      }),
+    ]))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(imgDestDir))
 ))
 

@@ -4,7 +4,19 @@ include ../node_modules/pug-bootstrap/components/carousel
 
 block append content
   +carousel("home", [
-    {image: "images/botswana-color.jpg", p: "Okavango Delta, Botswana"},
-    {image: "images/belize.jpg", p: "Placencia, Belize"},
-    {image: "images/johnsville.jpg", p: "Johnsville, California"},
+    {
+      image: "images/botswana-color.min.jpg",
+      p: "Okavango Delta, Botswana",
+      alt: "Okavango Delta, Botswana"
+    },
+    {
+      image: "images/belize.min.jpg",
+      p: "Placencia, Belize",
+      alt: "Placencia, Belize"
+    },
+    {
+      image: "images/johnsville.min.jpg",
+      p: "Johnsville, California",
+      alt: "Johnsville, California"
+    },
   ])

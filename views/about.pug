@@ -2,17 +2,17 @@ extends layout
 
 block append content
   .about-container.container-overflow
-    .about-collage
-      .pic.collage-1
-      .pic.collage-2
-      .pic.collage-3
-      .pic.collage-4
-      .pic.collage-5
-      .pic.collage-6
-    .about-description
+    section.about-collage
+      .column
+        img(src="images/buddy.min.jpg", class="pic collage-1" alt="Buddy")
+        img(src="images/katy-jackson.min.png", class="pic collage-2" alt="Katy with Jackson")
+      .column
+        img(src="images/agua-caliente.min.jpg", class="pic collage-3" alt="Agua Caliente, Palm Springs")
+        img(src="images/tina-jackson.min.jpg", class="pic collage-4" alt="Tina with Jackson")
+      .column
+        img(src="images/mom-jackson.min.jpg", class="pic collage-5" alt="Mom with Jackson")
+        img(src="images/family.min.jpg", class="pic collage-6" alt="Speier Sierra Dennis Family")
+    section.about-description
       p
         strong Jackson Sierra
         |  is a software engineer and thought partner interested in tackling civic and socioeconomic problems throught the use of technology.
-        br
-        br
-        | As a co-founder of a YCombinator startup and a former analyst in analytics and data science, Jackson knows first hand the incredible impact one can have building technology that enables the masses.

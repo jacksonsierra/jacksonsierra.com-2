@@ -3,9 +3,8 @@ include tooltip.pug
 
 block append content
   .app-container.container-overflow
-    .row.app
-      .app-image
-        img(src='./images/symple.png')
+    section.row.app
+      img(src='images/symple.min.png', class="app-image", alt="Symple logo")
       .app-info
         h3.symple Symple
         p.app-description
@@ -13,15 +12,15 @@ block append content
         ul.list-inline
           li: +tooltip-web('https://getsymple.com')
         ul.app-stack
+          li.btn.btn-default.app-tech Entrepreneurship
           li.btn.btn-default.app-tech React
           li.btn.btn-default.app-tech Redux
           li.btn.btn-default.app-tech Django/DRF
           li.btn.btn-default.app-tech PostgreSQL
           li.btn.btn-default.app-tech Webpack
           li.btn.btn-default.app-tech AWS
-    .row.app
-      .app-image
-        img(src='./images/stephen-curry.jpg')
+    section.row.app
+      img(src='images/stephen-curry.min.jpg', class="app-image", alt="Stephen Curry pumping up the crowd")
       .app-info
         h3.chef-curry Chef Curry
         p.app-description
@@ -35,9 +34,8 @@ block append content
           li.btn.btn-default.app-tech Django
           li.btn.btn-default.app-tech PostgreSQL
           li.btn.btn-default.app-tech DigitalOcean
-    .row.app
-      .app-image
-        img(src='./images/immedia-stock.png')
+    section.row.app
+      img(src='images/immedia-stock.min.png', class="app-image", alt="immedia logo")
       .app-info
         h3.immedia immedia
         p.app-description
@@ -53,9 +51,8 @@ block append content
           li.btn.btn-default.app-tech MongoDB
           li.btn.btn-default.app-tech Gulp.js
           li.btn.btn-default.app-tech DigitalOcean
-    .row.app
-      .app-image
-        img(src='./images/murmur-stock.png')
+    section.row.app
+      img(src='images/murmur-stock.min.png', class="app-image", alt="murmur logo")
       .app-info
         h3.murmur Murmur
         p.app-description
@@ -70,9 +67,8 @@ block append content
           li.btn.btn-default.app-tech Express
           li.btn.btn-default.app-tech Firebase
           li.btn.btn-default.app-tech DigitalOcean
-    .row.app
-      .app-image
-        img(src='./images/kevin-curtis-3308.jpg')
+    section.row.app
+      img(src='images/kevin-curtis-3308.min.jpg', class="app-image", alt="Couples eating at a restaurant")
       .app-info
         h3.koupler Koupler
         p.app-description
