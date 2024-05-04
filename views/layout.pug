@@ -1,11 +1,26 @@
 doctype html
 html(lang='en')
   head
-    title= title || 'Jackson Sierra'
-    meta(name='description' content='Jackson Sierra is a software engineer and thought partner interested in tackling civic and socioeconomic problems through the use of technology')
+    - var pageTitle = title || 'Jackson Sierra'
+    - var pageDescription = 'Jackson Sierra is a software engineer and thought partner interested in tackling civic and socioeconomic problems through the use of technology'
+    - var pageImage = 'images/favicon.min.ico'
+    - var pageUrl = 'https://www.jacksonsierra.com' + (path ? '/' + path : '')
+
+    title=pageTitle
+    link(rel='canonical' href='https://www.jacksonsierra.com')
+    link(rel='shortcut icon' href=pageImage)
+    meta(name='description' content=pageDescription)
     meta(name='google-site-verification', content='wscGQmIJFsl60YJCsCQIHEsneWxv1d_bmfIaK1rHBcQ')
     meta(name='viewport' content='width=device-width')
-    link(rel='shortcut icon' href='images/favicon.min.ico')
+    meta(property='og:site_name' content=pageTitle)
+    meta(property='og:description', content=pageDescription)
+    meta(property='og:image', content=pageImage)
+    meta(property='og:type', content='website')
+    meta(property='og:url', content=pageUrl)
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="@jacksonsierra")
+    meta(name="twitter:title" content=pageTitle)
+    meta(name="twitter:description" content=pageDescription)
     noscript.
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-WMCXCW', height='0' width='0' style='display:none;visibility:hidden')
     script.
