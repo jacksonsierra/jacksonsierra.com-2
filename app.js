@@ -50,6 +50,20 @@ app.use(helmet.contentSecurityPolicy({
       'fonts.googleapis.com',
       'ajax.googleapis.com',
       'googletagmanager.com',
+      'www.googletagmanager.com',
+      'www.google-analytics.com',
+      '\'sha256-dnvp5Mifbdjs2vyh7eeWym/Nh8ULVwxqVnxgAG1K0kc=\'',
+      '\'sha256-ejOuF9CeAC7NilIkOdRsChMjMU2Ch1e3OxJcxfpoSzE=\'',
+    ],
+    'img-src': [
+      '\'self\'',
+      'www.google-analytics.com',
+      'stats.g.doubleclick.net',
+    ],
+    'connect-src': [
+      '\'self\'',
+      'www.google-analytics.com',
+      'stats.g.doubleclick.net',
     ],
   },
 }))
